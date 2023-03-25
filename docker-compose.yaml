@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    expose: 
+      - "5000"
+    # if you want to use it on port 8000
+    # ports:
+    #   - "8000:5000"
+    # expose: 
+    #   - "8000"
+    volumes:
+      - .:/app
+    stdin_open: true
+    environment:
+        - CHOKIDAR_USEPOLLING=true
+        # enable debug in order to catch live code updates
+        - FLASK_DEBUG=1
+        - OPENWEATHERMAP_API_KEY=3977db3fbb1f8accdd93bf8fbb1314d5
