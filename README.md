@@ -1,8 +1,8 @@
 # forecast-assignment
-use openweathermap.org apis to retrieve last 5-days weather for a given location
+Use openweathermap.org apis to retrieve last 5-days weather for a given location
 
 # SETUP
-from the main folder open a cmd and text ```docker-compose up``` to start the environment
+From the main folder open a cmd and text ```docker-compose up``` to start the environment
 
 # API
 GET
